@@ -1,11 +1,15 @@
 body {
     font: 20px Montserrat, sans-serif;
     line-height: 1.8;
-    color: #f5f6f7;
+    background: #007bff;
+    background: linear-gradient(to right, #0062E6, #33AEFF);
   }
   p {font-size: 16px;}
   .margin {margin-bottom: 45px;}
   .bg-1 { 
+    background: linear-gradient(to right, #0062E6, #33AEFF);
+    background: #1abc9c;
+
     background-color: #1abc9c; /* Green */
     color: #ffffff;
   }
@@ -56,4 +60,28 @@ bottom: 0;
 left: 0;
 width: 100%;
 height: 100px;
+}
+
+#sticky-footer {
+  flex-shrink: none;
+  background-color: darkslategray;
+  height: 80px;
+  width: 100%;
+
+}
+
+.submitBtn {
+  background-color: dodgerblue;
+
+}
+
+#sticky-footer{
+  bottom: 0px;
+  position: fixed;
+}
+
+.footerIcons{
+
+  margin:10px ;
+
 }
