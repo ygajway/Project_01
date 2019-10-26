@@ -1,4 +1,4 @@
-var queryURL = "https://api.giphy.com/v1/gifs/random?s=cats&api_key=dc6zaTOxFJmzC";
+var queryURL = "https://api.giphy.com/v1/gifs/random?tag=cats&api_key=dc6zaTOxFJmzC";
 
 
 $(".gif-button").on("click", function () {
@@ -6,6 +6,8 @@ $(".gif-button").on("click", function () {
         url: queryURL,
         method: "GET",
     }).then(function (response) {
-        console.log(response);
+        var newGif = $("<img>");
+        newGif.attr("src",response.data.images.original.url);
+        $("body").append(newGif);
     })
 })
