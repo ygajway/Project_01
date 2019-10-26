@@ -82,6 +82,21 @@ height: 100px;
 
 .footerIcons{
 
-  margin:10px ;
+  padding-left: 20px ;
+  padding-right: 20px;
 
+}
+
+.soberInput {
+  width: 15%;
+  display: inline-block;
+}
+h3 {
+  margin: 0 auto;
+}
+input {
+  color: gray;
+}
+.submitBtn {
+  color: white;
 }
