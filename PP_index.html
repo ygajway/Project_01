@@ -8,6 +8,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="assets/css/Project_style.css">
+
 
   
 </head>
@@ -19,19 +21,20 @@
 </div>
 
 <div class="container text-center">
- <button onclick="document.getElementById('id01').style.display='block'" class="button">Check In</button>
-    <span onclick="document.getElementById('id01').style.display='none'" class="button w3-display-topright">&times;</span> 
+ <!-- <button onclick="document.getElementById('id01').style.display='block'" class="button">Check In</button> -->
+   <!--  <span onclick="document.getElementById('id01').style.display='none'" class="button w3-display-topright">&times;</span>  -->
   
   <div class="modalOne"> 
+    <form>
     <h2>Hello there!</h2>
-    
-        <p>How are you feeling today?</p>
-       Enter your Name: <input type="text" name="fname"><br>
-  
+    Please enter your Name: <input type="text" name="fname">
   <input type="submit" value="Submit">
 </form>
+    
        
-          <div class="icons" style ="display:none">
+    <div class="modalTwo"> 
+    <h2>How are you today?</h2>
+    <div class="icons">
           <a href=""><img data-value="1" src="https://img.icons8.com/cute-clipart/64/000000/sad.png">
           <a href=""><img data-value="2"src="https://img.icons8.com/cute-clipart/64/000000/cool.png">
           <a href=""><img data-value="3"src="https://img.icons8.com/color/48/000000/smiling.png">
@@ -39,21 +42,19 @@
            <a href=""><img data-value="5"src="https://img.icons8.com/cute-clipart/64/000000/question.png">
            <a href=""><img data-value="6"src="https://img.icons8.com/cute-clipart/64/000000/evil.png">
     </div>
-
-    <div class="modalTwo">
-      <h2> How confident are you about your sobriety today?</h2>
-
-
-    </div>
-
+    
+    
+    <div class="modalThree"> 
+   <h2> How confident are you about your sobriety today?</h2>
+    <a href=""><img data-value="1" src="https://img.icons8.com/cute-clipart/64/000000/sad.png">
+          <a href=""><img data-value="2"src="https://img.icons8.com/cute-clipart/64/000000/cool.png">
+          <a href=""><img data-value="3"src="https://img.icons8.com/color/48/000000/smiling.png">
+           <a href=""><img data-value="4"src="https://img.icons8.com/dusk/64/000000/neutral-emoticon.png"> 
+           <a href=""><img data-value="5"src="https://img.icons8.com/cute-clipart/64/000000/question.png">
+           <a href=""><img data-value="6"src="https://img.icons8.com/cute-clipart/64/000000/evil.png">
   </div>
-</div>
 
-
-
-
-      
- <div class="jumbotron text-center" style="margin-bottom:0">
+        <div id="footer" >
   <div class= "buttons">
     <button type="button1" class="btn btn-primary">Homepage</button>
   <button type="button2" class="btn btn-primary">Happy Place</button>

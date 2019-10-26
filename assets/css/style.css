@@ -49,11 +49,25 @@ img {
     height: 80px;
     width: 80px;
 
- 
 
-  }
+table, th, td {
+  border: 1px solid black;
+}
+.percentage:after {
+  content: "";
+  display: block;
+  background-color: #3d9970;
+}
+.percentage-20:after {
+  width: 20%;
+}
+.percentage-30:after {
+  width: 30%;
+} 
 
-footer {
+  
+
+footer{
 
 position: absolute ; 
 bottom: 0;
