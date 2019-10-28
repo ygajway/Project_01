@@ -37,7 +37,7 @@ $(".quote-button").on("click", function () {
 $(".joke-button").on("click", function () {
     $(".gif-container").empty();
     $(".joke-container").empty();
-    $(".quote-container").empty();$.ajax({
+    $(".quote-container").empty(); $.ajax({
         accepts: {
             text: "application/json"
         },
@@ -53,5 +53,20 @@ $(".joke-button").on("click", function () {
 
 //pressing music button to create music player
 $(".music-button").on("click", function () {
+    $('audio#relaxing')[0].play();
+    $(".music-button").hide();
+    $(".stop-button").show();
+    $(".joke-button").hide();
+    $(".gif-button").hide();
+    $(".quote-button").hide();
+})
 
+$(".stop-button").on("click", function () {
+    $('audio#relaxing')[0].pause();
+    $('audio#relaxing')[0].currentTime = 0;
+    $(".music-button").show();
+    $(".stop-button").hide();
+    $(".joke-button").show();
+    $(".gif-button").show();
+    $(".quote-button").show();
 })
