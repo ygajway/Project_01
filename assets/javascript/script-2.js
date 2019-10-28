@@ -5,7 +5,9 @@ var proxy = "https://chriscastle.com/proxy/post.php?:proxy:";
 
 //pressing gif button to create a random cat gif
 $(".gif-button").on("click", function () {
-
+    $(".gif-container").empty();
+    $(".joke-container").empty();
+    $(".quote-container").empty();
     $.ajax({
         url: gifURL,
         method: "GET",
@@ -18,6 +20,9 @@ $(".gif-button").on("click", function () {
 
 //pressing quote button to create a random quote
 $(".quote-button").on("click", function () {
+    $(".gif-container").empty();
+    $(".joke-container").empty();
+    $(".quote-container").empty();
     $.ajax({
         method: "GET",
         url: quoteURL,
@@ -30,7 +35,9 @@ $(".quote-button").on("click", function () {
 
 //pressing joke button to create a random dad joke
 $(".joke-button").on("click", function () {
-    $.ajax({
+    $(".gif-container").empty();
+    $(".joke-container").empty();
+    $(".quote-container").empty();$.ajax({
         accepts: {
             text: "application/json"
         },
