@@ -5,39 +5,33 @@ var proxy = "https://chriscastle.com/proxy/post.php?:proxy:";
 
 //pressing gif button to create a random cat gif
 $(".gif-button").on("click", function () {
-    $(".gif-container").empty();
-    $(".joke-container").empty();
-    $(".quote-container").empty();
+    $(".content-container").empty();
     $.ajax({
         url: gifURL,
         method: "GET",
     }).then(function (response) {
         var newGif = $("<img>");
         newGif.attr("src", response.data.images.original.url);
-        $(".gif-container").append(newGif);
+        $(".content-container").append(newGif);
     })
 })
 
 //pressing quote button to create a random quote
 $(".quote-button").on("click", function () {
-    $(".gif-container").empty();
-    $(".joke-container").empty();
-    $(".quote-container").empty();
+    $(".content-container").empty();
     $.ajax({
         method: "GET",
         url: quoteURL,
     }).then(function (response) {
         var newQuote = $("<div>");
         newQuote.text(response.quoteText);
-        $(".quote-container").append(newQuote);
+        $(".content-container").append(newQuote);
     })
 })
 
 //pressing joke button to create a random dad joke
 $(".joke-button").on("click", function () {
-    $(".gif-container").empty();
-    $(".joke-container").empty();
-    $(".quote-container").empty();
+    $(".content-container").empty();
     $.ajax({
         accepts: {
             text: "application/json"
@@ -48,11 +42,11 @@ $(".joke-button").on("click", function () {
     }).then(function (response) {
         var newJoke = $("<div>");
         newJoke.text(response.joke);
-        $(".joke-container").append(newJoke);
+        $(".content-container").append(newJoke);
     })
 })
 
-//pressing music button to create music player
+//pressing music button to start music
 $(".music-button").on("click", function () {
     $('audio#relaxing')[0].play();
     $(".music-button").hide();
@@ -60,11 +54,10 @@ $(".music-button").on("click", function () {
     $(".joke-button").hide();
     $(".gif-button").hide();
     $(".quote-button").hide();
-    $(".gif-container").empty();
-    $(".joke-container").empty();
-    $(".quote-container").empty();
+    $(".content-container").empty();
 })
 
+//pressing button to stop music
 $(".stop-button").on("click", function () {
     $('audio#relaxing')[0].pause();
     $('audio#relaxing')[0].currentTime = 0;

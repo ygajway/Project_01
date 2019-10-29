@@ -8,9 +8,7 @@ body {
   .margin {margin-bottom: 45px;}
   .bg-1 { 
     background: linear-gradient(to right, #0062E6, #33AEFF);
-    background: #1abc9c;
 
-    background-color: #1abc9c; /* Green */
     color: #ffffff;
   }
   /*.bg-2 { 
@@ -26,8 +24,8 @@ body {
     color: #fff;
   }
   .container-fluid {
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding-top: 15px;
+    /* padding-bottom: 85px; */
   }
   .navbar {
     padding-top: 5px;
@@ -45,10 +43,10 @@ body {
     color: #1abc9c !important;
   }
 
-img {
+#logo {
     height: 80px;
     width: 80px;
-
+}
 
 
 table, th, td {
@@ -67,19 +65,11 @@ table, th, td {
 }
 .percentage-30:after {
   width: 30%;
-} 
-
-  
-
-.gif-button,.quote-button, .joke-button, .music-button{
-  color: teal;
-  background-color:lightyellow;
-  padding: 50px;
 }
 
 #sticky-footer {
  /* flex-shrink: none;*/
-  background-color: lightyellow;
+  background-color: whitesmoke;
 
   width: 100%;
   bottom: 0px;
@@ -89,36 +79,41 @@ table, th, td {
 
 }
 
-}
-
 .submitBtn {
-  background-color: dodgerblue;
-
+  background-color: #007bff;
+  color: white;
 }
 
-.box1, .box2{
-
+.box1, .box2, .box5{
+  margin: 0 auto;
+  /* margin-left: auto;
+  margin-right: auto; */
   background-color: teal;
-  width: 700px;
-  border: 10px black;
-  padding: 50px;
-  margin: 10px;
+  /* width: 800px; */
+  /* padding: 50px; */
+  /* margin: 10px; */
   box-align : center;
-  width: 800px;
-  border: 5px black;
-  padding: 50px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  /* width: 800px; */
+  /* padding: 50px; */
   /*margin: 20px;*/
+}
+
+.box5 {
+  margin-bottom: 100px;
 }
 
 .footerIcons{
 
   padding-left: 20px ;
   padding-right: 20px;
+  margin: 10px;
 
 }
 
 .soberInput {
-  width: 15%;
+  width: 70px;
   display: inline-block;
 }
 h3 {
@@ -127,12 +122,18 @@ h3 {
 input {
   color: gray;
 }
+
+#soberSubmit{
+  background-color: #007bff;
+  color: whitesmoke;
+}
+
 .submitBtn {
   color: white;
 }
 
 .navbar{
-  background-color:lightyellow;
+  background-color:whitesmoke;
   text-align: center;
 }
 
@@ -150,4 +151,10 @@ input {
   /*margin: 20px;*/
 }
 
+<<<<<<< HEAD
 
+=======
+.smiley1:hover, .smiley2:hover {
+  cursor: pointer;
+}
+>>>>>>> cfcbb8d292f0d14b4c39df352830923816574bfd
