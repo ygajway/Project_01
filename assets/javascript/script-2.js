@@ -37,7 +37,8 @@ $(".quote-button").on("click", function () {
 $(".joke-button").on("click", function () {
     $(".gif-container").empty();
     $(".joke-container").empty();
-    $(".quote-container").empty(); $.ajax({
+    $(".quote-container").empty();
+    $.ajax({
         accepts: {
             text: "application/json"
         },
@@ -59,11 +60,15 @@ $(".music-button").on("click", function () {
     $(".joke-button").hide();
     $(".gif-button").hide();
     $(".quote-button").hide();
+    $(".gif-container").empty();
+    $(".joke-container").empty();
+    $(".quote-container").empty();
 })
 
 $(".stop-button").on("click", function () {
     $('audio#relaxing')[0].pause();
     $('audio#relaxing')[0].currentTime = 0;
+    
     $(".music-button").show();
     $(".stop-button").hide();
     $(".joke-button").show();
