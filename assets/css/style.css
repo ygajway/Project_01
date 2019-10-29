@@ -158,6 +158,14 @@ input {
   /*margin: 20px;*/
 }
 
+#chart-container {
+  margin: 0 auto;
+}
+
+#myChart {
+  height: 500px !important;
+}
+
 .smiley1:hover, .smiley2:hover {
   cursor: pointer;
 }
