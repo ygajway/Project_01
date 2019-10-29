@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <!-- Theme Made By www.w3schools.com - No Copyright -->
   <title>Happy Place</title>
@@ -12,71 +13,95 @@
   <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
+
 <body>
 
-<!-- Navbar -->
-<nav class="navbar navbar-default">
+  <!-- Navbar -->
+  <nav class="navbar navbar-default">
 
-      <a class="navbar-brand" href="#"><img src="assets/images/logo.png" alt="logo"></a>
-      <h1> Welcome to HAPPY PLACE! </h1>
+    <a class="navbar-brand" href="#"><img src="assets/images/logo.png" alt="logo"></a>
+    <h1> Welcome to HAPPY PLACE! </h1>
 
-      <!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+    <!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>                        
           </button> -->
-  
-</nav>
 
-<!-- First Container -->
-<div class="container-fluid bg-1 text-center">
+  </nav>
+
+  <!-- First Container -->
+  <div class="container-fluid bg-1 text-center">
     <div class="container">
-        <div class="box3">
-            
-            <button class="gif-button">Gif Button</button>
-            <button class="quote-button">Quote Button</button>
-            <button class="joke-button">Joke Button</button>
-            <button class="music-button">Relaxing Music</button>
-            <button class="stop-button" style="display: none;">Stop Music</button>
-           
-            <div class="quote-container"></div>
-            <div class="joke-container"></div>
-            <div class="gif-container"></div>
-            <div class="music-container"></div>
-            <audio loop id="relaxing">
-              <source src="assets/sounds/happy-place-music.mp3" type="audio/mpeg">
-           </audio>
-        
+      <div class="row">
+        <div class="col-md-3"></div>
+        <div class="card gif-button col-md-3 mb-3">
+          <img src="assets/images/gif-image.gif" class="card-img-top" alt="gifs are found here" height="150px">
+          <div class="card-body">
+            <h5 class="card-title">Cat Gifs</h5>
+          </div>
+        </div>
+        <div class="card quote-button col-md-3 mb-3">
+          <img src="assets/images/quote-image.jpg" class="card-img-top" alt="quotes are found here" height="150px">
+          <div class="card-body">
+            <h5 class="card-title">Inspiring Quotes</h5>
+          </div>
+        </div>
+        <div class="col-md-3"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-3"></div>
+        <div class="card joke-button col-md-3 mb-3">
+          <img src="assets/images/joke-image.jpg" class="card-img-top" alt="jokes are found here" height="150px">
+          <div class="card-body">
+            <h5 class="card-title">Dad Jokes</h5>
+          </div>
+        </div>
+        <div class="card music-button col-md-3 mb-3">
+          <img src="assets/images/music-image.jpg" class="card-img-top" alt="musics are found here" height="150px">
+          <div class="card-body">
+            <h5 class="card-title">Relaxing Music</h5>
+          </div>
+        </div>
+        <div class="col-md-3"></div>
+      </div>
+      <button class="stop-button" style="display: none;">Stop Music</button>
+      <div class="content-container"></div>
+
+      <audio loop id="relaxing">
+        <source src="assets/sounds/happy-place-music.mp3" type="audio/mpeg">
+      </audio>
+
     </div>
-</div>
-</div>
-<!-- Footer -->
-<div class="container text-center">
-<footer id="sticky-footer" >
-        
-            <div class="btn-group text-center">
-                <span class='footerIcons' style='font-size:50px; '>&#127968;</span>   
-                      
-                <span class='footerIcons' style='font-size:50px;'>&#127958;</span>  
-                            
-              
-                <span class='footerIcons' style='font-size:50px;'>&#128336;</span>
-                       
+  </div>
+  </div>
+  <!-- Footer -->
+  <div class="container text-center">
+    <footer id="sticky-footer">
 
-                <span class='footerIcons' style='font-size:50px;'> &#128200;</span>
-               
+      <div class="btn-group text-center">
+        <span class='footerIcons' style='font-size:50px; '>&#127968;</span>
 
-        
-              </div>
-        
-        
-</footer> 
-</div>  
+        <span class='footerIcons' style='font-size:50px;'>&#127958;</span>
+
+
+        <span class='footerIcons' style='font-size:50px;'>&#128336;</span>
+
+
+        <span class='footerIcons' style='font-size:50px;'>&#128200;</span>
+
+
+
+      </div>
+
+
+    </footer>
+  </div>
 
 
 </body>
-    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
-    <script src="assets/javascript/script-2.js"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+<script src="assets/javascript/script-2.js"></script>
 </body>
 
 </html>
