@@ -67,14 +67,6 @@ table, th, td {
 }
 .percentage-30:after {
   width: 30%;
-} 
-
-  
-
-.gif-button,.quote-button, .joke-button, .music-button{
-  color: teal;
-  background-color:whitesmoke;
-  padding: 50px;
 }
 
 #sticky-footer {
