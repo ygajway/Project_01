@@ -115,7 +115,7 @@ table, th, td {
 }
 
 .soberInput {
-  width: 5%;
+  width: 70px;
   display: inline-block;
 }
 h3 {
@@ -135,7 +135,7 @@ input {
 }
 
 .navbar{
-  background-color:lightyellow;
+  background-color:whitesmoke;
   text-align: center;
 }
 
