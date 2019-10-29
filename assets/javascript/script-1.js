@@ -1,8 +1,10 @@
-var now = moment().format("L");
+// var now = moment().format("L");
 var nameInput = $("#nameInput");
 var nameSubmit = $("#nameSubmit");
 var name = "";
-var checkIn;
+// var userDateInput = moment(mInput.val() + "/" + dInput.val() + "/" + yInput.val(),"MM/DD/YYYY");
+var soberDate = userDateInput;
+var checkIn = [];
 // var index = { date: now, mood: mScale, risk: rScale};
 
 function sendCheck(){
@@ -11,7 +13,7 @@ function sendCheck(){
 }
 var savedChecks = JSON.parse(localStorage.getItem("Check-Ins"));
 
-nameSubmit.on("click",function(event){
+soberSubmit.on("click",function(event){
     event.preventDefault();
     var name = nameInput.val();
     localStorage.setItem("name",name);
