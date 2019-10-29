@@ -29,30 +29,27 @@
 </nav>
 
 <!-- First Container -->
-<div class="container">
-  <div class="row">
-    
-
-  <dl>
-  <dt>A title of the graph</dt>
-  <dd class="percentage">
-    <span class="text">
-      Data 1: 20%
-    </span>
-  </dd>
-  <dd class="percentage">
-    <span class="text">
-      Data 2: 50%
-    </span>
-  </dd>
-  <dd class="percentage">
-    <span class="text">
-      Data 3: 30%
-    </span>
-  </dd>
-</dl>
-  
-
+<div class="container-fluid bg-1 text-center">
+    <div class="container">
+        <div class="box3">
+            
+            <button class="gif-button">Gif Button</button>
+            <button class="quote-button">Quote Button</button>
+            <button class="joke-button">Joke Button</button>
+            <button class="music-button">Relaxing Music</button>
+            <button class="stop-button" style="display: none;">Stop Music</button>
+           
+            <div class="quote-container"></div>
+            <div class="joke-container"></div>
+            <div class="gif-container"></div>
+            <div class="music-container"></div>
+            <audio loop id="relaxing">
+              <source src="assets/sounds/happy-place-music.mp3" type="audio/mpeg">
+           </audio>
+        
+    </div>
+</div>
+</div>
 <!-- Footer -->
 <div class="container text-center">
 <footer id="sticky-footer" >
@@ -83,7 +80,3 @@
 </body>
 
 </html>
-
-
-
-
