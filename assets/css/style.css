@@ -109,7 +109,14 @@ table, th, td {
   padding-left: 20px ;
   padding-right: 20px;
   margin: 10px;
+}
 
+#nameInput {
+  margin-top: 10px;
+}
+
+.hello { 
+  margin-top: 10px;
 }
 
 .soberInput {
@@ -151,10 +158,36 @@ input {
   /*margin: 20px;*/
 }
 
-<<<<<<< HEAD
-
-=======
 .smiley1:hover, .smiley2:hover {
   cursor: pointer;
 }
->>>>>>> cfcbb8d292f0d14b4c39df352830923816574bfd
+
+.checkInBox {
+  width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .checkInBox {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .checkInBox {
+    width: 100%;
+  }
+  #yInput {
+    width: 80px;
+    margin: 0 auto;
+  }
+  .footerIcons {
+    padding: 10px;
+    margin: 0 auto;
+  }
+  #soberSubmit {
+    font-size: 16px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+}
