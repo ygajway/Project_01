@@ -1,5 +1,4 @@
 // var now = moment().format("L");
-// var nameInput = $("#nameInput");
 // var nameSubmit = $("#nameSubmit");
 // var name = "";
 // var userDateInput = moment(mInput.val() + "/" + dInput.val() + "/" + yInput.val(),"MM/DD/YYYY");
@@ -24,6 +23,11 @@ var prompt0 = $("#prompt0");
 var prompt1 = $("#prompt1");
 var prompt2 = $("#prompt2");
 var soberSubmit = $("#soberSubmit");
+var nameInput = $("#nameInput");
+var mInput = $("#mInput");
+var dInput = $("#dInput");
+var yInput = $("#yInput");
+
 
 prompt0.hide();
 prompt1.hide();
@@ -41,4 +45,5 @@ $(document).ready(function(){
         prompt0.hide();
         prompt1.show();
     })
+    
 });
