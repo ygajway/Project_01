@@ -84,7 +84,7 @@ table, th, td {
   color: white;
 }
 
-.box1, .box2, .box5{
+.box1, .box2, .box5, .box6 {
   margin: 0 auto;
   /* margin-left: auto;
   margin-right: auto; */
@@ -100,9 +100,9 @@ table, th, td {
   /*margin: 20px;*/
 }
 
-.box5 {
+/* .box5 {
   margin-bottom: 100px;
-}
+} */
 
 .footerIcons{
 

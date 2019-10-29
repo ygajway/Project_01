@@ -2,6 +2,7 @@ var now = moment().format("L");
 var prompt0 = $("#prompt0");
 var prompt1 = $("#prompt1");
 var prompt2 = $("#prompt2");
+var alertBox = $("#alertBox");
 var soberSubmit = $("#soberSubmit");
 var nameInput = $("#nameInput");
 var mInput = $("#mInput");
@@ -16,6 +17,7 @@ var checkInArray = [];
 prompt0.hide();
 prompt1.hide();
 prompt2.hide();
+alertBox.hide();
 
 function intro(){
     prompt0.show();
@@ -49,7 +51,7 @@ function checkIn(){
             var index = { date: now, mood: mScale, risk: rScale};
             checkInArray.push(index);
             localStorage.setItem("checkIns",JSON.stringify(checkInArray));
-            alert("Thanks for checking in!");
+            alertBox.text("Thanks for checking in today!").show();
         });
     });
 }
