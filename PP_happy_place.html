@@ -19,7 +19,7 @@
   <!-- Navbar -->
   <nav class="navbar navbar-default">
 
-    <a class="navbar-brand" href="#"><img src="assets/images/logo.png" alt="logo"></a>
+    <a class="navbar-brand"><img src="assets/images/logo.png" alt="logo"></a>
     <h1> Welcome to HAPPY PLACE! </h1>
 
     <!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -31,49 +31,45 @@
   </nav>
 
   <!-- First Container -->
-  <div class="container-fluid bg-1 text-center">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3"></div>
-        <div class="card gif-button col-md-3 mb-3">
-          <img src="assets/images/gif-image.gif" class="card-img-top" alt="gifs are found here" height="150px">
-          <div class="card-body">
-            <h5 class="card-title">Cat Gifs</h5>
-          </div>
+  <div class="container-fluid text-center py-10">
+    <div class="row">
+      <div class="col-md-3"></div>
+      <div class="card gif-button col-md-3 mb-3">
+        <img src="assets/images/gif-image.gif" class="card-img-top" alt="gifs are found here" height="150px">
+        <div class="card-body">
+          <h5 class="card-title text-white">Cat Gifs</h5>
         </div>
-        <div class="card quote-button col-md-3 mb-3">
-          <img src="assets/images/quote-image.jpg" class="card-img-top" alt="quotes are found here" height="150px">
-          <div class="card-body">
-            <h5 class="card-title">Inspiring Quotes</h5>
-          </div>
-        </div>
-        <div class="col-md-3"></div>
       </div>
-      <div class="row">
-        <div class="col-md-3"></div>
-        <div class="card joke-button col-md-3 mb-3">
-          <img src="assets/images/joke-image.jpg" class="card-img-top" alt="jokes are found here" height="150px">
-          <div class="card-body">
-            <h5 class="card-title">Dad Jokes</h5>
-          </div>
+      <div class="card quote-button col-md-3 mb-3">
+        <img src="assets/images/quote-image.jpg" class="card-img-top" alt="quotes are found here" height="150px">
+        <div class="card-body">
+          <h5 class="card-title">Inspiring Quotes</h5>
         </div>
-        <div class="card music-button col-md-3 mb-3">
-          <img src="assets/images/music-image.jpg" class="card-img-top" alt="musics are found here" height="150px">
-          <div class="card-body">
-            <h5 class="card-title">Relaxing Music</h5>
-          </div>
-        </div>
-        <div class="col-md-3"></div>
       </div>
-      <button class="stop-button" style="display: none;">Stop Music</button>
-      <div class="content-container"></div>
-
-      <audio loop id="relaxing">
-        <source src="assets/sounds/happy-place-music.mp3" type="audio/mpeg">
-      </audio>
-
+      <div class="col-md-3"></div>
     </div>
-  </div>
+    <div class="row">
+      <div class="col-md-3"></div>
+      <div class="card joke-button col-md-3 mb-3">
+        <img src="assets/images/joke-image.jpg" class="card-img-top" alt="jokes are found here" height="150px">
+        <div class="card-body">
+          <h5 class="card-title">Dad Jokes</h5>
+        </div>
+      </div>
+      <div class="card music-button col-md-3 mb-3">
+        <img src="assets/images/music-image.jpg" class="card-img-top" alt="musics are found here" height="150px">
+        <div class="card-body">
+          <h5 class="card-title">Relaxing Music</h5>
+        </div>
+      </div>
+      <div class="col-md-3"></div>
+    </div>
+    <button class="stop-button" style="display: none;">Stop Music</button>
+    <div class="content-container"></div>
+
+    <audio loop id="relaxing">
+      <source src="assets/sounds/happy-place-music.mp3" type="audio/mpeg">
+    </audio>
   </div>
   <!-- Footer -->
   <div class="container text-center">
@@ -99,8 +95,8 @@
   </div>
 
 
-<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
-<script src="assets/javascript/script-2.js"></script>
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+  <script src="assets/javascript/script-2.js"></script>
 </body>
 
 </html>

@@ -46,7 +46,7 @@ $(".joke-button").on("click", function () {
     })
 })
 
-//pressing music button to create music player
+//pressing music button to start music
 $(".music-button").on("click", function () {
     $('audio#relaxing')[0].play();
     $(".music-button").hide();
@@ -57,6 +57,7 @@ $(".music-button").on("click", function () {
     $(".content-container").empty();
 })
 
+//pressing button to stop music
 $(".stop-button").on("click", function () {
     $('audio#relaxing')[0].pause();
     $('audio#relaxing')[0].currentTime = 0;
