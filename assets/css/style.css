@@ -150,3 +150,7 @@ input {
   padding: 50px;
   /*margin: 20px;*/
 }
+
+.smiley1:hover, .smiley2:hover {
+  cursor: pointer;
+}
