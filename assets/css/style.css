@@ -46,6 +46,7 @@ body {
 #logo {
     height: 80px;
     width: 80px;
+    
 }
 
 
@@ -84,11 +85,11 @@ table, th, td {
   color: white;
 }
 
-.box1, .box2, .box5{
+.box1, .box2, .box5, .box6 {
   margin: 0 auto;
   /* margin-left: auto;
   margin-right: auto; */
-  background-color: teal;
+  background-color: deepskyblue;
   /* width: 800px; */
   /* padding: 50px; */
   /* margin: 10px; */
@@ -98,11 +99,13 @@ table, th, td {
   /* width: 800px; */
   /* padding: 50px; */
   /*margin: 20px;*/
+  box-shadow: 10px 10px 5px dimgrey;
+  border-radius: 8px;
 }
 
-.box5 {
+/* .box5 {
   margin-bottom: 100px;
-}
+} */
 
 .footerIcons{
 
@@ -110,6 +113,14 @@ table, th, td {
   padding-right: 20px;
   margin: 10px;
 
+}
+
+#nameInput {
+  margin-top: 10px;
+}
+
+.hello { 
+  margin-top: 10px;
 }
 
 .soberInput {
@@ -151,6 +162,54 @@ input {
   /*margin: 20px;*/
 }
 
+<<<<<<< HEAD
 .smiley1:hover, .smiley2:hover {
   cursor: pointer;
 }
+=======
+#chart-container {
+  margin: 0 auto;
+}
+
+#myChart {
+  height: 500px !important;
+}
+
+.smiley1:hover, .smiley2:hover {
+  cursor: pointer;
+}
+
+.checkInBox {
+  width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .checkInBox {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .checkInBox {
+    width: 100%;
+  }
+  #yInput {
+    width: 80px;
+    margin: 0 auto;
+  }
+  .footerIcons {
+    padding: 10px;
+    margin: 0 auto;
+  }
+  #soberSubmit {
+    font-size: 16px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+}
+
+h1 {
+  text-shadow:2px 2px 5px lightsteelblue;
+}
+>>>>>>> c46da3096e85bef705f94ef932a66da1b17f2706
