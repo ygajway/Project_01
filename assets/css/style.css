@@ -85,6 +85,10 @@ table, th, td {
   color: white;
 }
 
+.alex-cards {
+  color: white;
+}
+
 .box1, .box2, .box5, .box6 {
   margin: 0 auto;
   /* margin-left: auto;
