@@ -3,6 +3,7 @@ var prompt0 = $("#prompt0");
 var prompt1 = $("#prompt1");
 var prompt2 = $("#prompt2");
 var alertBox = $("#alertBox");
+var alertBox2 = $("#alertBox2");
 var soberSubmit = $("#soberSubmit");
 var nameInput = $("#nameInput");
 var mInput = $("#mInput");
@@ -18,6 +19,7 @@ prompt0.hide();
 prompt1.hide();
 prompt2.hide();
 alertBox.hide();
+alertBox2.hide();
 
 function intro(){
     prompt0.show();
@@ -52,6 +54,7 @@ function checkIn(){
             checkInArray.push(index);
             localStorage.setItem("checkIns",JSON.stringify(checkInArray));
             alertBox.text("Thanks for checking in today!").show();
+            alertBox2.text("Please feel free to navigate the rest of the app. Alternatively, you can refresh this page to check in again.").show();
         });
     });
 }
