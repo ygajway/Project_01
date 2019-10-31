@@ -1,15 +1,34 @@
+var checkIns = JSON.parse(localStorage.getItem("checkIns"));
+
+var m = [];
+var r = [];
+
+for (var i = 0; i < checkIns.length; i++) {
+
+    if (i<7){
+        m[i] = checkIns[checkIns.length-(i+1)].mood;
+        r[i] = checkIns[checkIns.length-(i+1)].risk;
+    }
+    
+}
+
+if (m.length<7){
+    m[m.length] = 0
+    r[r.length] = 0;
+}
+
 var ctx = document.getElementById('myChart').getContext('2d');
 var myChart = new Chart(ctx, {
     type: 'line',
     data: {
-        labels: ["Monday", "Tuesday", "Wedndesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        labels: [" ", " ", " ", " Last 7 Check-Ins ", " ", " ", " "],
         datasets: [{ 
-                  data: [1, 2, 3, 3, 5, 3, 3],
+                  data: m.reverse(),
                   label: "Mood",
                   borderColor: "#e8c3b9",
                   fill: true
                 }, { 
-                  data: [5, 4, 3, 4, 2, 1, 4],
+                  data: r.reverse(),
                   label: "Risk",
                   borderColor: "#c45850",
                   fill: true
@@ -19,8 +38,8 @@ var myChart = new Chart(ctx, {
     options: {
         scales: {
             yAxis: [{
-                ticks: { 
-                  beginAtZero: true,
+                ticks: {
+                    beginAtZero: true
                 }
             }]
         }
