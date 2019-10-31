@@ -58,6 +58,7 @@ $(".music-button").on("click", function () {
     $(".gif-button").hide();
     $(".quote-button").hide();
     $(".content-container").empty();
+    $(".content-container").show();
 })
 
 //pressing button to stop music
@@ -69,4 +70,5 @@ $(".stop-button").on("click", function () {
     $(".joke-button").show();
     $(".gif-button").show();
     $(".quote-button").show();
+    $(".content-container").hide();
 })
