@@ -89,10 +89,14 @@ table, th, td {
   color: white;
 }
 
+.alex-cards img:hover {
+  cursor: pointer;
+}
+
 .box1, .box2, .box5, .box6 {
   margin: 0 auto;
-  /* margin-left: auto;
-  margin-right: auto; */
+   margin-left: auto;
+  margin-right: auto; 
   background-color: deepskyblue;
   /* width: 800px; */
   /* padding: 50px; */
@@ -240,4 +244,5 @@ h1 {
   font-size: 60px;
   padding-bottom:10px;
   padding-right: 10px;
+  cursor: pointer;
   }
