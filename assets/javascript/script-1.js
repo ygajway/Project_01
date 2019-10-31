@@ -11,6 +11,7 @@ var dInput = $("#dInput");
 var yInput = $("#yInput");
 var smiley1 = $(".smiley1");
 var smiley2 = $(".smiley2");
+var settingsButton = $("#settings");
 var checkInArray = [];
 
 
@@ -22,6 +23,10 @@ alertBox.hide();
 alertBox2.hide();
 
 function intro(){
+    prompt1.hide();
+    prompt2.hide();
+    alertBox.hide();
+    alertBox2.hide();
     prompt0.show();
     soberSubmit.on("click",function(){
         event.preventDefault();
@@ -64,7 +69,18 @@ $(document).ready(function(){
         intro();
     }
     else {
-        checkIn();
+        if(localStorage.getItem("navigate")==="settings") {
+            intro();
+            localStorage.setItem("navigate","");
+        }
+        else{
+            checkIn();
+        }
+        
     }
+
+    settingsButton.on("click",function(){        
+        intro();
+    })
     
 });
