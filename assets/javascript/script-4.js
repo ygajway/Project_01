@@ -29,7 +29,7 @@ var myChart = new Chart(ctx, {
                   fill: true
                 }, { 
                   data: r.reverse(),
-                  label: "Risk",
+                  label: "Confidence",
                   borderColor: "#c45850",
                   fill: true
                 }
