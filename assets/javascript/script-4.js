@@ -17,9 +17,6 @@ if (m.length<7){
     r[r.length] = 0;
 }
 
-console.log("m:" + m.length)
-
-
 var ctx = document.getElementById('myChart').getContext('2d');
 var myChart = new Chart(ctx, {
     type: 'line',
