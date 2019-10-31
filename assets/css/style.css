@@ -235,3 +235,9 @@ h1 {
 .jumbotron {
   background: linear-gradient(to right, #0062E6, #33AEFF);
 }
+#settings{
+  float: right;
+  font-size: 60px;
+  padding-bottom:10px;
+  padding-right: 10px;
+  }
