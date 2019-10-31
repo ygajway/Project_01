@@ -14,7 +14,7 @@ var smiley2 = $(".smiley2");
 var settingsButton = $("#settings");
 var checkInArray = [];
 
-
+console.log(now);
 
 prompt0.hide();
 prompt1.hide();
@@ -35,10 +35,10 @@ function intro(){
         console.log(mInput.val());
         console.log(dInput.val());
         console.log(yInput.val());
-        var userDateInput = moment(mInput.val() + "/" + dInput.val() + "/" + yInput.val(),"MM/DD/YYYY");
+        var userDateInput = moment(mInput.val() + "/" + dInput.val() + "/" + yInput.val(), "MM/DD/YYYY");
         var soberDate = userDateInput;
         console.log(soberDate);
-        localStorage.setItem("soberDate",soberDate);
+        localStorage.setItem("soberDate",soberDate.format("MM/DD/YYYY"));
         prompt0.hide();
         checkIn();
     });
