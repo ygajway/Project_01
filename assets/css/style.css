@@ -166,11 +166,6 @@ input {
   /*margin: 20px;*/
 }
 
-<<<<<<< HEAD
-.smiley1:hover, .smiley2:hover {
-  cursor: pointer;
-}
-=======
 #chart-container {
   margin: 0 auto;
 }
@@ -216,4 +211,7 @@ input {
 h1 {
   text-shadow:2px 2px 5px lightsteelblue;
 }
->>>>>>> c46da3096e85bef705f94ef932a66da1b17f2706
+
+.jumbotron {
+  background: linear-gradient(to right, #0062E6, #33AEFF);
+}
