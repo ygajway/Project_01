@@ -85,6 +85,10 @@ table, th, td {
   color: white;
 }
 
+.alex-cards {
+  color: white;
+}
+
 .box1, .box2, .box5, .box6 {
   margin: 0 auto;
   /* margin-left: auto;
@@ -226,6 +230,8 @@ input {
 
 h1 {
   text-shadow:2px 2px 5px lightsteelblue;
-  text-align: center;
+}
 
+.jumbotron {
+  background: linear-gradient(to right, #0062E6, #33AEFF);
 }
