@@ -1,19 +1,16 @@
 var now = moment();
 var nowRead = moment().format("MM/DD/YYYY");
 var localSoberDate = localStorage.getItem("soberDate")
-var userDateInput = moment(localSoberDate,"MM/DD/YYYY");
-var soberDate = userDateInput;
-var soberYears = now.diff(soberDate,"years");
-var soberMonths = (now.diff(soberDate,"months") - (soberYears * 12));
-var soberDays = (now.diff(soberDate,"days") - ((soberYears * 365) + (soberMonths * 30)));
+var soberDate = moment(localSoberDate,"MM/DD/YYYY");
 var soberNumber = $(".soberNumber");
 var streakNumber = $(".streakNumber");
 var checkIns = JSON.parse(localStorage.getItem("checkIns"));
+
 if (!checkIns) {
-    streakNumber.text("Please check in again tomorrow to see your streak.");
+    streakNumber.text("Please check in at least twice to see your daily streak.");
 }
 else if (!checkIns) {
-    streakNumber.text("Please check in again tomorrow to see your streak.");
+    streakNumber.text("Please check in at least twice to see your daily streak.");
 }
 else {
     var newEntryDate = checkIns[checkIns.length-1].date;
@@ -29,7 +26,7 @@ else {
             counter++;
         }
         streakNumber.append(streakContainer);
-        streakContainer.append(counter);
+        streakContainer.append(counter + "days");
     }
     calcStreak();
 }
