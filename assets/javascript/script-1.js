@@ -1,4 +1,4 @@
-var now = moment().format("L");
+var now = moment().format("MM/DD/YYYY");
 var prompt0 = $("#prompt0");
 var prompt1 = $("#prompt1");
 var prompt2 = $("#prompt2");
@@ -58,6 +58,7 @@ function checkIn(){
             var index = { date: now, mood: mScale, risk: rScale};
             checkInArray.push(index);
             localStorage.setItem("checkIns",JSON.stringify(checkInArray));
+            calcStreak();
             alertBox.text("Thanks for checking in today!").show();
             alertBox2.text("Please feel free to navigate the rest of the app. Alternatively, you can refresh this page to check in again.").show();
         });

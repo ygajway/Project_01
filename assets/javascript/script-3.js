@@ -5,11 +5,13 @@ var soberDate = moment(localSoberDate,"MM/DD/YYYY");
 var soberNumber = $(".soberNumber");
 var streakNumber = $(".streakNumber");
 var checkIns = JSON.parse(localStorage.getItem("checkIns"));
+var counter = 0;
+
 
 if (!checkIns) {
     streakNumber.text("Please check in at least twice to see your daily streak.");
 }
-else if (!checkIns) {
+else if (checkIns.length < 2) {
     streakNumber.text("Please check in at least twice to see your daily streak.");
 }
 else {
@@ -17,21 +19,21 @@ else {
     var oldEntryDate = checkIns[checkIns.length-2].date;
     var newEntry = moment(newEntryDate,"MM/DD/YYYY");
     var oldEntry = moment(oldEntryDate,"MM/DD/YYYY");
+    console.log(newEntry.diff(oldEntry,"days"));
     function calcStreak(){
         var streakContainer = $("<h2>");
-        if (newEntry.diff(oldEntry) > 1) {
+        if (newEntry.diff(oldEntry, "days") > 1) {
             counter = 0;
         }
-        else if (newEntry.diff(oldEntry) == 1) {
+        else if (newEntry.diff(oldEntry, "days") === 1) {
             counter++;
         }
         streakNumber.append(streakContainer);
-        streakContainer.append(counter + "days");
+        streakContainer.append(counter + " days");
+        console.log(counter);
     }
     calcStreak();
 }
-
-var counter = 0;
 
 function calcSober(){
     var soberContainer = $("<h2>");
