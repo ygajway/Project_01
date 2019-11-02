@@ -58,8 +58,9 @@ function checkIn(){
                     var oldEntryDate = checkIns[checkIns.length-2].date;
                     var newEntry = moment(newEntryDate,"MM/DD/YYYY");
                     var oldEntry = moment(oldEntryDate,"MM/DD/YYYY");
-                    if (localStorage.getItem("counter") === null) {
+                    if (localStorage.getItem("counter") == null) {
                         count = 0;
+                        localStorage.setItem("counter", count)
                     }
                     var count = localStorage.getItem("counter");
                     if (newEntry.diff(oldEntry, "days") === 1) {
