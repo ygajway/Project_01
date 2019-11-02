@@ -15,24 +15,18 @@ else if (checkIns.length < 2) {
     streakNumber.text("Please check in at least twice to see your daily streak.");
 }
 else {
-    var newEntryDate = checkIns[checkIns.length-1].date;
-    var oldEntryDate = checkIns[checkIns.length-2].date;
-    var newEntry = moment(newEntryDate,"MM/DD/YYYY");
-    var oldEntry = moment(oldEntryDate,"MM/DD/YYYY");
-    console.log(newEntry.diff(oldEntry,"days"));
-    function calcStreak(){
+    function printStreak(){
         var streakContainer = $("<h2>");
-        if (newEntry.diff(oldEntry, "days") > 1) {
-            counter = 0;
+        var localCounter = localStorage.getItem("counter");
+        if (localCounter == 1) {
+            streakContainer.append(localCounter + " day");
         }
-        else if (newEntry.diff(oldEntry, "days") === 1) {
-            counter++;
+        else {
+        streakContainer.append(localCounter + " days");
         }
         streakNumber.append(streakContainer);
-        streakContainer.append(counter + " days");
-        console.log(counter);
     }
-    calcStreak();
+    printStreak();
 }
 
 function calcSober(){
