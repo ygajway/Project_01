@@ -45,8 +45,9 @@ body {
 
 #logo {
     height: 95px;
-    width: 75px;
+    width: 70px;
     padding-bottom: 30px;    
+    display: inline-block;
 }
 
 
@@ -206,6 +207,25 @@ input {
   width: 50%;
 }
 
+h1 {
+  text-shadow:2px 2px 5px lightsteelblue;
+}
+
+.jumbotron {
+  background: linear-gradient(to right, #0062E6, #33AEFF);
+}
+#settings{
+  float: right;
+  font-size: 50px;
+  padding-bottom:20px;
+  padding-right: 10px;
+  cursor: pointer;
+  }
+
+  .music-button {
+    margin-bottom: 100px;
+  }
+
 @media screen and (max-width: 768px) {
   .checkInBox {
     width: 75%;
@@ -230,19 +250,40 @@ input {
     margin: 0 auto;
     margin-top: 10px;
   }
-}
-
-h1 {
-  text-shadow:2px 2px 5px lightsteelblue;
-}
-
-.jumbotron {
-  background: linear-gradient(to right, #0062E6, #33AEFF);
-}
-#settings{
-  float: right;
-  font-size: 50px;
-  padding-bottom:20px;
-  padding-right: 10px;
-  cursor: pointer;
+  #logo {
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    top: 0;
+    left: 0;
+    padding: 0;
   }
+  #settings {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    padding: 0;
+  }
+
+  h1 {
+    font-size: 26px;
+    letter-spacing: -.1em;
+    margin-right: 8% !important;
+  }
+
+  /* Better accommodates phones so there's not two layers of smileys */
+  .smiley1, .smiley2 {
+    font-size: 45px !important;
+  }
+
+  /* Prevents the cats from creating a horizontal scroll necessity */
+  img {
+    max-width: 90vw !important;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+}
+
