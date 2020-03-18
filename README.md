@@ -2,6 +2,8 @@
 
 ---
 
+Deployed Application: https://peace-project.netlify.com/
+
 ## Overview
 
 People in recovery need a place where they can go to keep track of their progress to break the cycle of addiction. With The Peace Project, users can enter daily check-in data, use resources to get through small moments of need, and look at how they have progressed over their last seven check-ins to see trends on the road to a healthy lifestyle. The goal is to give relief and a sense of accomplishment to any user that needs it as the sole method of assistance for smaller issues or as part of a larger program for bigger ones. The Peace Project empowers users to **Check In** with their current mood and confidence about their program, visit their **Happy Place** for simple distractions, coping mechanisms, and encouragement, track their **Progress**, and **Visualize** their data over time.
